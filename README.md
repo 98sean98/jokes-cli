@@ -33,6 +33,13 @@ Chuck Norris doesn't see dead people. He makes people dead.
 Took 1290ms to fetch.
 ```
 
+### Add executable to PATH
+To get a better experience running the command anywhere in your console.
+Move the `./jokes` file to where PATH has access to.
+In my case, that meant putting it into `/usr/local/bin/`.
+
+If you have done this right, you can now run `which jokes` to check if PATH could access the executable. And you can run `jokes get -t` to get a joke.
+
 ### Dart cli
 A sample command-line application with an entrypoint in `bin/`, library code
 in `lib/`, and example unit test in `test/`.
