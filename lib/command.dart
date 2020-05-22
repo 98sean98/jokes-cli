@@ -12,14 +12,17 @@ class JokesCommand extends Command {
 
   @override
   Future<void> run() async {
-    var stopwatch = Stopwatch();
+    final showTime = argResults['time'];
+    final stopwatch = Stopwatch();
     stopwatch.start();
 
-    var joke = await JokesApi().getJoke();
+    final joke = await JokesApi().getJoke();
 
     stopwatch.stop();
 
     stdout.write('${joke}\n');
-    stdout.write('Took ${stopwatch.elapsedMilliseconds}ms to fetch.\n');
+    if (showTime) {
+      stdout.write('Took ${stopwatch.elapsedMilliseconds}ms to fetch.\n');
+    }
   }
 }

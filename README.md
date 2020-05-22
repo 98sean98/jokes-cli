@@ -20,10 +20,18 @@ Run executable.
 ```
 
 ### Available commands
-`get`: prints a joke in the console.
+command | description | flags
+--- | --- | ---
+`get` | Prints a joke in the console | `-t --time` Prints time taken to fetch joke
+`help` | Prints help manual.
 
-example usage: `jokes get`
+example usage:
+```shell script
+jokes get -t
 
+Chuck Norris doesn't see dead people. He makes people dead.
+Took 1290ms to fetch.
+```
 
 ### Dart cli
 A sample command-line application with an entrypoint in `bin/`, library code
