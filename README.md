@@ -40,6 +40,9 @@ In my case, that meant putting it into `/usr/local/bin/`.
 
 If you have done this right, you can now run `which jokes` to check if PATH could access the executable. And you can run `jokes get -t` to get a joke.
 
+## Credits
+The api I'm using can be found [here](https://github.com/sameerkumar18/geek-joke-api). Credits to [Sameer Kumar](https://github.com/sameerkumar18).
+
 ### Dart cli
 A sample command-line application with an entrypoint in `bin/`, library code
 in `lib/`, and example unit test in `test/`.
